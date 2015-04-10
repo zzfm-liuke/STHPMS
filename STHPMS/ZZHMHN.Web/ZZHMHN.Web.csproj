@@ -219,7 +219,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ObjectBuilder.cs" />
-    <Compile Include="UI\test2.cs" />
     <Compile Include="UI\TestUI.cs" />
     <Compile Include="View\FrmNavTest.aspx.cs">
       <DependentUpon>FrmNavTest.aspx</DependentUpon>
