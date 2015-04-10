@@ -14,7 +14,8 @@ namespace ZZHMHN.Web.UI
     {
         public string PrintAddResult(ITestEntity entity)
         {
-            return string.Format("程序计算结果:{0}", MyApp.Bll.Test.AddWith10(entity));
+            return string.Format("程序计算结果:{0}", MyApp.Bll.Test.AddWith10(entity)); 
+
         }
     }
 }
