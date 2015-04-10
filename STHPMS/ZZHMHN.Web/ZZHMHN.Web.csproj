@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZZHMHN.Web</RootNamespace>
+    <AssemblyName>ZZHMHN.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;_RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.4.3.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNetPager.7.4.3\lib\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\ihpms.sql" />
+    <Content Include="Config\prefer.sql" />
+    <Content Include="Config\select.sql" />
+    <Content Include="Css\default.css" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\loadingAnim.gif" />
+    <Content Include="MsgsResource.xml" />
+    <Content Include="Config\Navigation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Ashx\Navigation\Handler_Navigation.ashx" />
+    <None Include="Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.3.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="View\FrmNavTest.aspx" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="View\RoadManager\FrmEditRoad.aspx" />
+    <Content Include="View\RoadManager\FrmDataBaseManager.aspx" />
+    <Content Include="View\RoadManager\FrmMutipleParameterManager.aspx" />
+    <Content Include="View\RoadManager\FrmRoadManager.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\EntityBase.cs" />
+    <Compile Include="Core\InvokeContext.cs" />
+    <Compile Include="Core\Loader.cs" />
+    <Compile Include="Core\Scene.cs" />
+    <Compile Include="Core\UIBase.cs" />
+    <Compile Include="Core\UIFacade.cs" />
+    <Compile Include="Core\UIFactory.cs" />
+    <Compile Include="Core\WebModule.cs" />
+    <Compile Include="Entity\Archive\ARCHNDX.cs" />
+    <Compile Include="Entity\Archive\RDDIST.cs" />
+    <Compile Include="Entity\Archive\RDPCI.cs" />
+    <Compile Include="Entity\Archive\SAMPDATA.cs" />
+    <Compile Include="Entity\Archive\SAMPHEADER.cs" />
+    <Compile Include="Entity\Ihpms\ACTIVITY.cs" />
+    <Compile Include="Entity\Ihpms\CODEINFO.cs" />
+    <Compile Include="Entity\Ihpms\CondList.cs" />
+    <Compile Include="Entity\Ihpms\DISTTYPE.cs" />
+    <Compile Include="Entity\Ihpms\DTBRANCH.cs" />
+    <Compile Include="Entity\Ihpms\DTPARAM.cs" />
+    <Compile Include="Entity\Ihpms\HISTPERF.cs" />
+    <Compile Include="Entity\Ihpms\INVNTORY.cs" />
+    <Compile Include="Entity\Ihpms\MRPOLICY.cs" />
+    <Compile Include="Entity\Ihpms\MRPOLICYSETS.cs" />
+    <Compile Include="Entity\Ihpms\Personal ID.cs" />
+    <Compile Include="Entity\Ihpms\PMSELTS.cs" />
+    <Compile Include="Entity\Ihpms\PMSFILES.cs" />
+    <Compile Include="Entity\Ihpms\PREF_ITEMS.cs" />
+    <Compile Include="Entity\Ihpms\RDCAP.cs" />
+    <Compile Include="Entity\Ihpms\RDCAR.cs" />
+    <Compile Include="Entity\Ihpms\RDDIST.cs" />
+    <Compile Include="Entity\Ihpms\RDFRC.cs" />
+    <Compile Include="Entity\Ihpms\RDLAY.cs" />
+    <Compile Include="Entity\Ihpms\RDPCI.cs" />
+    <Compile Include="Entity\Ihpms\RDRGH.cs" />
+    <Compile Include="Entity\Ihpms\RDSTC.cs" />
+    <Compile Include="Entity\Ihpms\RDTRF.cs" />
+    <Compile Include="Entity\Ihpms\Road &amp; Stations.cs" />
+    <Compile Include="Entity\Ihpms\ROADWAY.cs" />
+    <Compile Include="Entity\Ihpms\SAMPDATA.cs" />
+    <Compile Include="Entity\Ihpms\SAMPHEADER.cs" />
+    <Compile Include="Entity\Ihpms\sysdiagrams.cs" />
+    <Compile Include="Entity\Ihpms\t_basis_roads.cs" />
+    <Compile Include="Entity\Ihpms\UNITS.cs" />
+    <Compile Include="Entity\Ihpms\View\ROADWAY_View.cs" />
+    <Compile Include="Entity\PCIWCI\COEFF_A.cs" />
+    <Compile Include="Entity\PCIWCI\COEFF_C.cs" />
+    <Compile Include="Entity\Prefer\Budget_Constraints.cs" />
+    <Compile Include="Entity\Prefer\Default_Option.cs" />
+    <Compile Include="Entity\Prefer\Default_Option2.cs" />
+    <Compile Include="Entity\Prefer\Friction_Model_Coefficients.cs" />
+    <Compile Include="Entity\Prefer\Maint_Effect_Coefficients.cs" />
+    <Compile Include="Entity\Prefer\Pave_Score_Weigh_Factors.cs" />
+    <Compile Include="Entity\Prefer\PCI_Model_Coefficient.cs" />
+    <Compile Include="Entity\Prefer\Performance_Threshold.cs" />
+    <Compile Include="Entity\Prefer\Priority_Factors.cs" />
+    <Compile Include="Entity\Prefer\Ride_Model_Coefficient.cs" />
+    <Compile Include="Entity\Prefer\Structural_DesignParameters.cs" />
+    <Compile Include="Entity\Prefer\Structural_DesignParameters2.cs" />
+    <Compile Include="Entity\Prefer\Structural_DesignReliability.cs" />
+    <Compile Include="Entity\Prefer\Structural_DesignTServiceability.cs" />
+    <Compile Include="Entity\Prefer\Structural_Layer_Properties.cs" />
+    <Compile Include="Entity\Prefer\Traffic_Parameters.cs" />
+    <Compile Include="Entity\Prefer\Traffic_Parameters2.cs" />
+    <Compile Include="Entity\Prefer\Unit_Cost.cs" />
+    <Compile Include="Entity\Prefer\Unit_Cost1.cs" />
+    <Compile Include="Entity\Select\Selection.cs" />
+    <Compile Include="Entity\Select\Selection2.cs" />
+    <Compile Include="Entity\TestEntity.cs" />
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Navigation\Handler_Navigation.ashx.cs">
+      <DependentUpon>Handler_Navigation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PageMaster.Master.cs">
+      <DependentUpon>PageMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageMaster.Master.designer.cs">
+      <DependentUpon>PageMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ObjectBuilder.cs" />
+    <Compile Include="UI\TestUI.cs" />
+    <Compile Include="View\FrmNavTest.aspx.cs">
+      <DependentUpon>FrmNavTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\FrmNavTest.aspx.designer.cs">
+      <DependentUpon>FrmNavTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmEditRoad.aspx.cs">
+      <DependentUpon>FrmEditRoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmEditRoad.aspx.designer.cs">
+      <DependentUpon>FrmEditRoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmDataBaseManager.aspx.cs">
+      <DependentUpon>FrmDataBaseManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmDataBaseManager.aspx.designer.cs">
+      <DependentUpon>FrmDataBaseManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmMutipleParameterManager.aspx.cs">
+      <DependentUpon>FrmMutipleParameterManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmMutipleParameterManager.aspx.designer.cs">
+      <DependentUpon>FrmMutipleParameterManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmRoadManager.aspx.cs">
+      <DependentUpon>FrmRoadManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\RoadManager\FrmRoadManager.aspx.designer.cs">
+      <DependentUpon>FrmRoadManager.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PageMaster.Master" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Js\" />
+    <Folder Include="UserControl\" />
+    <Folder Include="View\Performance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZZHMHN.BLL\ZZHMHN.BLL.csproj">
+      <Project>{78700bb2-352c-46ad-b297-b6ecadc28c66}</Project>
+      <Name>ZZHMHN.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZZHMHN.Common\ZZHMHN.Common.csproj">
+      <Project>{d55f36f4-a37d-44c2-bc17-b9a007109263}</Project>
+      <Name>ZZHMHN.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZZHMHN.DAL\ZZHMHN.DAL.csproj">
+      <Project>{d1e32143-8cbc-445c-ad3d-5f349366d681}</Project>
+      <Name>ZZHMHN.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZZHMHN.IBase\ZZHMHN.IBase.csproj">
+      <Project>{611a5c10-62a8-4b46-87cf-410edd162b9c}</Project>
+      <Name>ZZHMHN.IBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9885</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4587/ZZHMHN.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

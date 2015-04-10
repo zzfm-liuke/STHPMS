@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZHMHN.BLL", "ZZHMHN.BLL\ZZHMHN.BLL.csproj", "{78700BB2-352C-46AD-B297-B6ECADC28C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZHMHN.DAL", "ZZHMHN.DAL\ZZHMHN.DAL.csproj", "{D1E32143-8CBC-445C-AD3D-5F349366D681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZHMHN.Web", "ZZHMHN.Web\ZZHMHN.Web.csproj", "{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1E91AF2-5CBF-4D34-899E-B8A475F923E7}"
+	ProjectSection(SolutionItems) = preProject
+		工程结构说明.txt = 工程结构说明.txt
+		项目说明.xlsx = 项目说明.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9469DCBC-3E09-4723-A33D-8BAE0D699F7B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZHMHN.Common", "ZZHMHN.Common\ZZHMHN.Common.csproj", "{D55F36F4-A37D-44C2-BC17-B9A007109263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZHMHN.IBase", "ZZHMHN.IBase\ZZHMHN.IBase.csproj", "{611A5C10-62A8-4B46-87CF-410EDD162B9C}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78700BB2-352C-46AD-B297-B6ECADC28C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78700BB2-352C-46AD-B297-B6ECADC28C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78700BB2-352C-46AD-B297-B6ECADC28C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78700BB2-352C-46AD-B297-B6ECADC28C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E32143-8CBC-445C-AD3D-5F349366D681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E32143-8CBC-445C-AD3D-5F349366D681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E32143-8CBC-445C-AD3D-5F349366D681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E32143-8CBC-445C-AD3D-5F349366D681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286C59B1-B83D-4AD6-A7B1-E3B5BDA5008C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55F36F4-A37D-44C2-BC17-B9A007109263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55F36F4-A37D-44C2-BC17-B9A007109263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55F36F4-A37D-44C2-BC17-B9A007109263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55F36F4-A37D-44C2-BC17-B9A007109263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611A5C10-62A8-4B46-87CF-410EDD162B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611A5C10-62A8-4B46-87CF-410EDD162B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611A5C10-62A8-4B46-87CF-410EDD162B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611A5C10-62A8-4B46-87CF-410EDD162B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

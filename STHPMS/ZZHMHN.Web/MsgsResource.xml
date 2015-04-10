@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+  <message id="0">
+    <title>数据提供问题</title>
+    <body>没有找到数据的提供地方</body>
+  </message>
+  <message id="1">
+    <title>地址错误</title>
+    <body>页面地址错误或者地址参数错误</body>
+  </message>
+</messages>

@@ -1,0 +1,11 @@
+ZZHMHN.BLL    业务层
+
+ZZHMHN.DAL    数据层
+
+ZZHMHN.IDAL   数据层接口
+
+ZZHMHN.Model  实体层
+
+ZZHMHN.Web    表示层
+
+Ddemo_Chart   图标示例代码

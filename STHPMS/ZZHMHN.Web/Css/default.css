@@ -1,0 +1,185 @@
+﻿/**//*页面正文样式*/
+
+body {
+    margin : 0px auto;
+    scrollbar-face-color: #EDEDF3;
+
+    scrollbar-highlight-color: #ffffff;
+
+    scrollbar-shadow-color: #93949F;
+
+    scrollbar-3dlight-color: #EDEDF3;
+
+    scrollbar-arrow-color: #082468;
+
+    scrollbar-track-color: #F7F7F9;
+
+    scrollbar-darkshadow-color: #EDEDF3;
+
+    font-size: 9pt;
+
+    color: #003366;
+
+    overflow:auto;
+
+}
+
+
+/**//*表格样式*/
+
+table{
+    border:1px solid #B7B7B7;
+    
+}
+table td{
+
+    border:1px solid #B7B7B7;
+}
+
+
+
+/**//*按钮样式*/
+
+.ButtonCSS {
+
+    font-family: "Tahoma", "宋体";
+
+    font-size:9pt; color: #003399;
+
+    border: 1px #003399 solid;
+
+    color:#006699;
+
+    BORDER-BOTTOM: #93bee2 1px solid;
+
+    BORDER-LEFT: #93bee2 1px solid;
+
+    BORDER-RIGHT: #93bee2 1px solid;
+
+    BORDER-TOP: #93bee2 1px solid;
+
+    background-color: #e8f4ff;
+
+    CURSOR: hand;
+
+    font-style: normal ;
+
+    width:60px;
+
+    height:22px;
+
+}
+
+
+
+/**//*单选按钮样式*/
+
+.selectButtonCss{
+
+    font-family: "Tahoma", "宋体";
+
+    font-size: 9pt; color: #0066cc;
+
+    border: 1px #93bee2 solid;
+
+    BORDER-BOTTOM: #93bee2 1px solid;
+
+    BORDER-LEFT: #93bee2 1px solid;
+
+    BORDER-RIGHT: #93bee2 1px solid;
+
+    BORDER-TOP: #93bee2 1px solid;
+
+    background-color: #ffffff;
+
+    CURSOR: hand;
+
+    font-style: normal ;
+
+}   
+
+
+/**//*************************************
+
+下拉选择框显示风格
+
+*************************************/
+
+.DropDownList{
+
+   border: 1px solid #B7B7B7;
+
+    FONT-SIZE: 14px;
+
+    COLOR:#003366;
+
+    BACKGROUND-COLOR: #f4f4f4;
+
+    Width:200px;
+
+}
+
+/**//*****************************************************
+
+超级链接显示风格
+
+*****************************************************/
+
+a{color:#223355;text-decoration: none;}
+
+A:Hover{color:red;}
+
+
+/**//*****************************************************
+
+线条文本编辑框显示风格
+
+*****************************************************/
+
+.EditBox{
+
+    background: #ffffff;
+
+    border: 1px solid #B7B7B7;
+
+    color: #003366;
+
+    cursor: text;
+
+     font-size:14px;
+    Width:200px;
+}
+
+/**//****************************************************
+
+多行文本框样式
+
+*****************************************************/
+
+.MultiEditBox{
+
+    background: #f8f8f8;
+
+    border: 1px solid #B7B7B7;
+
+    color: #000000;
+
+    cursor: text;
+
+    font-size:14px;
+
+    width:400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

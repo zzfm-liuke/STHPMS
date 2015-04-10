@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <site url="View/RoadManager/FrmDataBaseManager.aspx" title="基础数据">
+    <site url="View/RoadManager/FrmDataBaseManager.aspx" title="路网管理"/>
+    <site url="View/RoadManager/FrmRoadManager.aspx" title="道路管理"/>
+    <site url="#" title="添加指标"/>
+  </site>
+  <site url="#" title="性能指标">
+    <site url="#" title="库存数据"/>
+    <site url="#" title="结构与层间特性"/>
+    <site url="#" title="平整度"/>
+    <site url="#" title="路面状态"/>
+    <site url="#" title="摩擦力"/>
+    <site url="#" title="事故数据"/>
+    <site url="#" title="通行能力"/>
+    <site url="#" title="交通量"/>
+    <site url="#" title="病害调查"/>
+  </site>
+  <site url="#" title="评估决策">
+    <site url="#" title="需求评估"/>
+    <site url="#" title="预算决策"/>
+    <site url="#" title="计算PCI"/>
+    <site url="#" title="维护策略"/>
+    <site url="#" title="性能模型"/>
+    <site url="#" title="选项"/>
+  </site>
+  <site url="#" title="系统管理">
+    <site url="#" title="密码修改"/>
+    <site url="#" title="用户管理"/>
+    <site url="#" title="权限管理"/>
+  </site>
+</root>
