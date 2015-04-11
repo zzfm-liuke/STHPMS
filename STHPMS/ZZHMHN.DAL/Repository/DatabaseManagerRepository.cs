@@ -36,7 +36,8 @@ namespace ZZHMHN.DAL.Repository
                                                    dBParam.DataFileSize,
                                                    dBParam.DataFileGrowth,
                                                    dBParam.LogFileSize,
-                                                   dBParam.LogFileGrowth));
+                                                   dBParam.LogFileGrowth,
+                                                   dBParam.Path));
             }
         }
 
@@ -136,12 +137,12 @@ namespace ZZHMHN.DAL.Repository
           @"CREATE DATABASE {0}
 ON 
 ( NAME = {0}_dat,
-    FILENAME = 'E:\database\MSSQL10.MSSQLSERVER\MSSQL\DATA\{0}dat.mdf',
+    FILENAME = '{5}\{0}dat.mdf',
     SIZE = {1},
     FILEGROWTH = {2} )
 LOG ON
 ( NAME = {0}_log,
-    FILENAME = 'E:\database\MSSQL10.MSSQLSERVER\MSSQL\DATA\{0}log.ldf',
+    FILENAME = '{5}\{0}log.ldf',
     SIZE = {3},
     FILEGROWTH = {4} );";
 
