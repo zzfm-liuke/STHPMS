@@ -110,6 +110,7 @@
     </Content>
     <Content Include="Ashx\Navigation\Handler_Navigation.ashx" />
     <None Include="Service\Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="readme.txt" />
     <Content Include="Service\Scripts\jquery-2.1.3.js" />
     <Content Include="Service\Scripts\jquery-2.1.3.min.js" />
     <Content Include="Service\Scripts\jquery.blockUI.js" />
