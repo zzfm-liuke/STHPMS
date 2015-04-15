@@ -8,23 +8,24 @@ using System.Web.UI.WebControls;
 using Wuqi.Webdiyer;//分页控件
 using ZZHMHN.IBase;
 using ZZHMHN.Web.Entity.Ihpms;
+using ZZHMHN.Common;
 
 namespace ZZHMHN.Web.View.RoadManager
 {
     public partial class FrmRoadManager : System.Web.UI.Page
     {
+        public string Road_ID;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+               
                 //获取总记录数
-                AspNetPager1.RecordCount = (int)MyApp.Bll.RoadWay.GetRecordCount();  
-                //修改功能完成后使用跳转之前的索引页
-                //if (Request.QueryString["pageIndex"] != null)
-                //{
-                //    AspNetPager1.CurrentPageIndex = Convert.ToInt32(Request.QueryString["pageIndex"]);
-                //}
-                //绑定数据              
+                AspNetPager1.RecordCount = (int)MyApp.Bll.RoadWay.GetRecordCount();
+                if (Common.Cookie.MyCookieHelper.GetCookieValue("road_id") != null)
+                {
+                    Road_ID = Common.Cookie.MyCookieHelper.GetCookieValue("road_id");
+                }
                 Bind();
             }
         }
@@ -177,5 +178,6 @@ namespace ZZHMHN.Web.View.RoadManager
             dgv_Man.EditIndex = -1;
             Bind();
         }
+
     }
 }

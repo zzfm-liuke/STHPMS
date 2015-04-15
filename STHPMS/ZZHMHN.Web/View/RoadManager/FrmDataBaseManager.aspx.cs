@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ZZHMHN.IBase;
 using ZZHMHN.Web.Entity.Ihpms;
+using ZZHMHN.Common;
 
 namespace ZZHMHN.Web.View.RoadManager
 {
@@ -70,7 +71,7 @@ namespace ZZHMHN.Web.View.RoadManager
                 MyApp.Dal.DatabaseManagerRepository.CopyData<DTPARAM>(datasource);
                 MyApp.Dal.DatabaseManagerRepository.CopyData<MRPOLICY>(datasource);
                 MyApp.Dal.DatabaseManagerRepository.CopyData<MRPOLICYSET>(datasource);
-                MyApp.Dal.DatabaseManagerRepository.CopyData<PMSELT>(datasource);
+                MyApp.Dal.DatabaseManagerRepository.CopyData<PMSELTS>(datasource);
                 MyApp.Dal.DatabaseManagerRepository.CopyData<PREF_ITEM>(datasource);
 
                 AspNetPager1.RecordCount = (int)MyApp.Bll.RoadDatabase.GetRecordCount();
@@ -133,9 +134,11 @@ namespace ZZHMHN.Web.View.RoadManager
             HiddenField lblRoadBaseId = Master.FindControl("lblRoadDatabaseId") as HiddenField;
             lblRoadBaseId.Value = road.id.ToString();
 
+            Common.Cookie.MyCookieHelper.SetCookie("road_id", road.id.ToString());//写入Cookie
+
             //using (ZZHMHN.IBase.I_Core.IScene sence = MyApp.Scene)
             //{
-            //    sence.Context = new ZZHMHN.Web.Core.InvokeContext("",road.id.ToString());
+            //    sence.Context = new ZZHMHN.Web.Core.InvokeContext("", road.id.ToString());
             //    sence.Bll.Test.TestScence();
             //}
             

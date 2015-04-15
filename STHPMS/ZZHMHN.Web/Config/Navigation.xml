@@ -3,7 +3,7 @@
   <site url="View/RoadManager/FrmDataBaseManager.aspx" title="基础数据">
     <site url="View/RoadManager/FrmDataBaseManager.aspx" title="路网管理"/>
     <site url="View/RoadManager/FrmRoadManager.aspx" title="道路管理"/>
-    <site url="#" title="添加指标"/>
+    <site url="View/RoadManager/FrmMutipleParameterManager.aspx" title="添加指标"/>
   </site>
   <site url="#" title="性能指标">
     <site url="#" title="库存数据"/>

@@ -44,6 +44,24 @@ namespace ZZHMHN.DAL.Core
         {
             return Get<DatabaseManagerRepository>();
         }
+
+        public ISelectionRepository GetSelectionRepository()
+        {
+            return Get<SelectionRepository>();
+        }
+
+
+        public IPmseltsRepository GetPmseltsRepository()
+        {
+            return Get<PmseltsRepository>();
+        }
+
+        public IRdLayRepository GetRdLayRepository()
+        {
+            return Get<RdLayRepository>();
+        }
+
+
         #endregion
 
         #region Dao
@@ -64,5 +82,11 @@ namespace ZZHMHN.DAL.Core
 
         #endregion
 
+
+
+
+
+
+       
     }
 }

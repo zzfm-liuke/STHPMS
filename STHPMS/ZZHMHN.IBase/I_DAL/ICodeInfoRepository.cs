@@ -13,5 +13,7 @@ namespace ZZHMHN.IBase.I_DAL
         List<T> Get<T>(T entity) where T : ICODEINFO;
 
         List<int> GetMaxNum() ;
+
+        List<int> GetCodeInWorkArea(string StndName, ref int NumElts);
     }
 }

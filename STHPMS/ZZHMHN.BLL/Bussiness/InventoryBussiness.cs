@@ -13,10 +13,10 @@ namespace ZZHMHN.BLL.Bussiness
 {
     public class InventoryBussiness : BllBase, IInventoryBill
     {
-        public List<T> GetBegin<T>(int RoadNum, int rdSelectedIndex) where T : class, IINVNTORY
+        public List<T> GetBegin<T>(int RoadNum, string segIDs) where T : class, IINVNTORY
         {
-            //用户库和基础库的联查
-            return MyApp.Dal.InventoryRepository.GetBegin<T>(RoadNum, rdSelectedIndex);
+            //从用户库获取segIds 查询基础库
+            return MyApp.Dal.InventoryRepository.GetBegin<T>(RoadNum,  segIDs);
         }
 
 

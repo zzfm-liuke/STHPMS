@@ -49,5 +49,11 @@ namespace ZZHMHN.IBase.I_DAL
         /// 库存数据库访问
         /// </summary>
         IInventoryRepository InventoryRepository { get; }
+
+        ISelectionRepository SelectionRepository { get; }
+
+        IPmseltsRepository PmseltsRepository { get; }
+
+        IRdLayRepository RdLayRepository { get; }
     }
 }

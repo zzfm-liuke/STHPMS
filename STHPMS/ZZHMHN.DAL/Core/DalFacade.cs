@@ -80,6 +80,22 @@ namespace ZZHMHN.DAL.Core
         {
             get { return  Ext.SetScence(Factory.GetDatabaseManagerRepository(), this.Scene); }
         }
+
+        public ISelectionRepository SelectionRepository
+        {
+            get { return Ext.SetScence(Factory.GetSelectionRepository(), this.Scene); }
+        }
+
+        public IPmseltsRepository PmseltsRepository 
+        {
+            get { return Ext.SetScence(Factory.GetPmseltsRepository(),this.Scene); }
+        }
+
+        public IRdLayRepository RdLayRepository
+        {
+            get { return Ext.SetScence(Factory.GetRdLayRepository(),this.Scene); }
+        }
+
         #endregion
 
 
@@ -91,5 +107,8 @@ namespace ZZHMHN.DAL.Core
 
 
 
+
+
+      
     }
 }

@@ -26,23 +26,23 @@ namespace ZZHMHN.DAL.Dao
         #region Repository
         public IRepository Archive
         {
-            get { return Factory.GetRepository(string.Format(ConfigStrings.ArchiveConnectionString, "")); }
+            get { return Factory.GetRepository(string.Format(ConfigStringsFactory.NewConfigStrings().ArchiveConnectionString, "")); }
         }
         public IRepository IHPMS
         {
-            get { return Factory.GetRepository(string.Format(ConfigStrings.IHPMSConnectionString, "")); }
+            get { return Factory.GetRepository(string.Format(ConfigStringsFactory.NewConfigStrings().IHPMSConnectionString, "")); }
         }
         public IRepository PCIWCI
         {
-            get { return Factory.GetRepository(string.Format(ConfigStrings.PCIWCIConnectionString, "")); }
+            get { return Factory.GetRepository(string.Format(ConfigStringsFactory.NewConfigStrings().PCIWCIConnectionString, "")); }
         }
         public IRepository Prefer
         {
-            get { return Factory.GetRepository(string.Format(ConfigStrings.PreferConnectionString, "")); }
+            get { return Factory.GetRepository(string.Format(ConfigStringsFactory.NewConfigStrings().PreferConnectionString, "")); }
         }
         public IRepository Select
         {
-            get { return Factory.GetRepository(string.Format(ConfigStrings.SelectConnectionString, "")); }
+            get { return Factory.GetRepository(string.Format(ConfigStringsFactory.NewConfigStrings().SelectConnectionString, "")); }
         }
         #endregion
     }

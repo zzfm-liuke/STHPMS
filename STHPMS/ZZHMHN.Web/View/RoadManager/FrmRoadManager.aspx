@@ -9,7 +9,7 @@
             //分页初始化
             $('#add').unbind().bind('click', function () {
                 //打开新增的模式窗口
-                var openUrl = "FrmEditRoad.aspx";//弹出窗口的url
+                var openUrl = "FrmEditRoad.aspx?Road_ID=" + $("#hd_road_id").val();//弹出窗口的url
                 var iWidth = 800; //弹出窗口的宽度;
                 var iHeight = 600; //弹出窗口的高度;
                 var iTop = (window.screen.availHeight - 30 - iHeight) / 2; //获得窗口的垂直位置;
@@ -46,10 +46,14 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
+     <div> <input id="add" type="button" value="新增" />
+         <input id="hd_road_id" type="hidden" value="<%=Road_ID %>" />
+
+     </div>
     <div id="dvGrid" style="padding: 10px; width: 550px">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
- <div><a id="add" href="#">新增</a></div>
+
                 <asp:GridView ID="dgv_Man" runat="server" AutoGenerateColumns="False" OnRowCancelingEdit="dgv_Man_RowCancelingEdit"
                     OnRowEditing="dgv_Man_RowEditing" OnRowDataBound="dgv_Man_RowDataBound" DataKeyNames="RDWAYID"
                     OnRowCommand="dgv_Man_RowCommand" Width="600px">

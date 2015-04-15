@@ -9,6 +9,7 @@ using ZZHMHN.IBase.I_DAL;
 using ServiceStack;
 using System.Web;
 using System.Web.UI;
+using ZZHMHN.Common;
 
 namespace ZZHMHN.DAL.Dao
 {
@@ -19,35 +20,42 @@ namespace ZZHMHN.DAL.Dao
     {
         public List<object> GetData()
         {
-            List<object> lst = new List<object>();
-            //读取xml
-            XmlDocument xml = new XmlDocument();
-            xml.Load("~/../Config/Navigation.xml".MapAbsolutePath());
-
-            XmlNode root = xml.DocumentElement;
-            //可以判断是否有权限
-            foreach (XmlNode site in root.ChildNodes)
+            if(!Common.Cache.MyCacheTools.IsCacheExist("Navigation"))
             {
-                var temp = new
+
+                List<object> lst = new List<object>();
+                //读取xml
+                XmlDocument xml = new XmlDocument();
+                xml.Load("~/../Config/Navigation.xml".MapAbsolutePath());
+
+                XmlNode root = xml.DocumentElement;
+                //可以判断是否有权限
+                foreach (XmlNode site in root.ChildNodes)
                 {
-                    title = site.Attributes["title"].Value,
-                    url = site.Attributes["url"].Value,
-                    child = new List<object>()
-                };
-                foreach (XmlNode childNode in site)
-                {
-                    var s = new
+                    var temp = new
                     {
-                        title = childNode.Attributes["title"].Value,
-                        url = ResolveUrl(childNode.Attributes["url"].Value)
+                        title = site.Attributes["title"].Value,
+                        url = site.Attributes["url"].Value,
+                        child = new List<object>()
                     };
-                    temp.child.Add(s);
+                    foreach (XmlNode childNode in site)
+                    {
+                        var s = new
+                        {
+                            title = childNode.Attributes["title"].Value,
+                            url = ResolveUrl(childNode.Attributes["url"].Value)
+                        };
+                        temp.child.Add(s);
+                    }
+
+                    lst.Add(temp);
                 }
+                Common.Cache.MyCacheTools.SetCache("Navigation", lst,10);
 
-                lst.Add(temp);
             }
+           
 
-            return lst;
+            return (List<object>)Common.Cache.MyCacheTools.GetCache("Navigation");
         }
 
         public string ResolveUrl(string relativeUrl)

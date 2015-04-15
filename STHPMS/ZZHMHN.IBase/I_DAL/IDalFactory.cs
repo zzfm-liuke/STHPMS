@@ -24,5 +24,11 @@ namespace ZZHMHN.IBase.I_DAL
         IRoadWayRepository GetRoadWayRepository();
 
         IInventoryRepository GetInventoryRepository();
+
+        ISelectionRepository GetSelectionRepository();
+
+        IPmseltsRepository GetPmseltsRepository();
+
+        IRdLayRepository GetRdLayRepository();
     }
 }

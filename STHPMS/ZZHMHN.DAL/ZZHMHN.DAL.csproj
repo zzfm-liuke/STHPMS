@@ -81,7 +81,10 @@
     <Compile Include="Dao\NavigationDao.cs" />
     <Compile Include="Repository\DatabaseManagerRepository.cs" />
     <Compile Include="Repository\InventoryRepository.cs" />
+    <Compile Include="Repository\PmseltsRepository.cs" />
+    <Compile Include="Repository\RdLayRepository.cs" />
     <Compile Include="Repository\RoadWayRepository.cs" />
+    <Compile Include="Repository\SelectionRepository.cs" />
     <Compile Include="Repository\TestRepository.cs" />
   </ItemGroup>
   <ItemGroup>

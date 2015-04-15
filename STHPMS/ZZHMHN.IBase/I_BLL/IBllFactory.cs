@@ -21,5 +21,11 @@ namespace ZZHMHN.IBase.I_BLL
         ICodeInfoBll GetCodeBill();
 
         IInventoryBill GetInventoryBill();
+
+        IPmseltsBill GetPmseltsBill();
+
+        ISelectionBill GetSelectionBill();
+
+        IRdLayBill GetRdLayBill();
     }
 }

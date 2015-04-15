@@ -17,8 +17,9 @@ namespace ZZHMHN.BLL.Bussiness
         {
             //检查缓存
             if (!Common.Cache.MyCacheTools.IsCacheExist(entity.STNDNAME))
-            { 
-                List<T> lst = MyApp.Dal.CodeInfoRepository.Get<T>(entity);
+            {
+                List<T> lst = this.Scene.Dal.CodeInfoRepository.Get<T>(entity);
+                //List<T> lst = MyApp.Dal.CodeInfoRepository.Get<T>(entity);
                 Common.Cache.MyCacheTools.SetCache(entity.STNDNAME, lst, 10);
             }
 

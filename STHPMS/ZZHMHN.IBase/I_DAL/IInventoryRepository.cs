@@ -17,7 +17,7 @@ namespace ZZHMHN.IBase.I_DAL
         /// <param name="RoadNum">道路编号</param>
         /// /// <param name="rdSelectedIndex">FrmMutipleParameterManager页面单选按钮选项</param>
         /// <returns></returns>
-        List<T> GetBegin<T>(int RoadNum,int rdSelectedIndex) where T : class ,IINVNTORY;
+        List<T> GetBegin<T>(int RoadNum, string segIDs) where T : class ,IINVNTORY;
         /// <summary>
         /// 返回FrmMutipleParameterManager页面的Begin项
         /// </summary>

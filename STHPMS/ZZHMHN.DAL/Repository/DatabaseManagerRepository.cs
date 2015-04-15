@@ -24,7 +24,7 @@ namespace ZZHMHN.DAL.Repository
         public void CreateDataBase(string name)
         {
             OrmLiteConfig.DialectProvider = SqlServerOrmLiteDialectProvider.Instance;
-            DatabaseParam dBParam = new DatabaseParam().SetDefaultValue();
+            DatabaseParam dBParam = ConfigStringsFactory.NewDatabaseParam();
 
             var connectionString = string.Format(ConnectionString, dBParam.ServerName, dBParam.DatabaseName, dBParam.UserId, dBParam.Password);
             dBParam.DatabaseName = name;
@@ -45,7 +45,7 @@ namespace ZZHMHN.DAL.Repository
         {
 
             OrmLiteConfig.DialectProvider = SqlServerOrmLiteDialectProvider.Instance;
-            DatabaseParam dBParam = new DatabaseParam().SetDefaultValue();
+            DatabaseParam dBParam = ConfigStringsFactory.NewDatabaseParam();
 
             var connectionString = string.Format(ConnectionString, dBParam.ServerName, dBParam.DatabaseName, dBParam.UserId, dBParam.Password);
 
@@ -113,7 +113,7 @@ namespace ZZHMHN.DAL.Repository
         {
             OrmLiteConfig.DialectProvider = SqlServerOrmLiteDialectProvider.Instance;
 
-            var connectionString = string.Format(ConfigStrings.IHPMSConnectionString, "");
+            var connectionString = string.Format(ConfigStringsFactory.NewConfigStrings().IHPMSConnectionString, "");
             IRoadsDao roadDao = MyApp.Dal.RoadsDao;
             roadDao.DataSource = datasource;
 

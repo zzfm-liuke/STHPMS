@@ -16,68 +16,92 @@ namespace ZZHMHN.Web.View.RoadManager
         {
             if (!IsPostBack)
             {
-                BindFacility();
-                BindRoadName();
-                BindRidDir();
-                BindSecDir();
+                string Road_ID = Request.QueryString["Road_ID"];
+                BindFacility(Road_ID);
+                BindRoadName(Road_ID);
+                BindRidDir(Road_ID);
+                BindSecDir(Road_ID);
                 txt_BeginTime.Text = DateTime.Now.ToShortDateString();
             }
         }
 
         //设施
-        void BindFacility()
-        {
+        void BindFacility(string Road_ID)
+        { 
             //应该来自用户数据库
-            CODEINFO temp = new CODEINFO();
-            temp.STNDNAME = "ROADWAY.FACILITY";
-            List<CODEINFO> lst = MyApp.Bll.CodeInfo.Get<CODEINFO>(temp);
-            lst_Facility.DataSource = lst;
-            lst_Facility.DataTextField = "info";
-            lst_Facility.DataValueField = "CODE";
-            lst_Facility.DataBind();
+            //取出Road.ID
+             using (ZZHMHN.IBase.I_Core.IScene sence = MyApp.Scene)
+             {
+                 CODEINFO temp = new CODEINFO();
+                 temp.STNDNAME = "ROADWAY.FACILITY";
+                 sence.Context = new ZZHMHN.Web.Core.InvokeContext("", Road_ID);
+                 List<CODEINFO> lst = sence.Bll.CodeInfo.Get<CODEINFO>(temp);
+                 lst_Facility.DataSource = lst;
+                 lst_Facility.DataTextField = "info";
+                 lst_Facility.DataValueField = "CODE";
+                 lst_Facility.DataBind();
 
-            if (lst_Facility.Items.Count > -1)
-            {
-                lst_Facility.SelectedIndex = 0;
-            }
+                 if (lst_Facility.Items.Count > -1)
+                 {
+                     lst_Facility.SelectedIndex = 0;
+                 }
+             }
+
+           
+            //CODEINFO temp = new CODEINFO();
+            //temp.STNDNAME = "ROADWAY.FACILITY";
+            //List<CODEINFO> lst = MyApp.Bll.CodeInfo.Get<CODEINFO>(temp);
+            
         }
 
         //道路名称
-        void BindRoadName()
+        void BindRoadName(string Road_ID)
         {
             //应该来自用户数据库
-            CODEINFO temp = new CODEINFO();
-            temp.STNDNAME = "ROADWAY.ROADNUM";
-            List<CODEINFO> lst = MyApp.Bll.CodeInfo.Get<CODEINFO>(temp);
-            ddl_RoadName.DataSource = lst;
-            ddl_RoadName.DataTextField = "info";
-            ddl_RoadName.DataValueField = "CODE";
-            ddl_RoadName.DataBind();
+            using (ZZHMHN.IBase.I_Core.IScene sence = MyApp.Scene)
+            {
+                CODEINFO temp = new CODEINFO();
+                temp.STNDNAME = "ROADWAY.ROADNUM";
+                sence.Context = new ZZHMHN.Web.Core.InvokeContext("", Road_ID);
+                List<CODEINFO> lst = sence.Bll.CodeInfo.Get<CODEINFO>(temp);
+                ddl_RoadName.DataSource = lst;
+                ddl_RoadName.DataTextField = "info";
+                ddl_RoadName.DataValueField = "CODE";
+                ddl_RoadName.DataBind();
+            }
         }
 
         //主要方向
-        void BindRidDir()
+        void BindRidDir(string Road_ID)
         {
             //应该来自用户数据库
-            CODEINFO temp = new CODEINFO();
-            temp.STNDNAME = "ROADWAY.PRIMARYDIR";
-            List<CODEINFO> lst = MyApp.Bll.CodeInfo.Get<CODEINFO>(temp);
-            ddl_PriDir.DataSource = lst;
-            ddl_PriDir.DataTextField = "info";
-            ddl_PriDir.DataValueField = "CODE";
-            ddl_PriDir.DataBind();
+            using (ZZHMHN.IBase.I_Core.IScene sence = MyApp.Scene)
+            {
+                CODEINFO temp = new CODEINFO();
+                temp.STNDNAME = "ROADWAY.PRIMARYDIR";
+                sence.Context = new ZZHMHN.Web.Core.InvokeContext("", Road_ID);
+                List<CODEINFO> lst = sence.Bll.CodeInfo.Get<CODEINFO>(temp);
+                ddl_PriDir.DataSource = lst;
+                ddl_PriDir.DataTextField = "info";
+                ddl_PriDir.DataValueField = "CODE";
+                ddl_PriDir.DataBind();
+            }
         }
         //次要方向
-        void BindSecDir()
+        void BindSecDir(string Road_ID)
         {
             //应该来自用户数据库
-            CODEINFO temp = new CODEINFO();
-            temp.STNDNAME = "ROADWAY.SECONDDIR";
-            List<CODEINFO> lst = MyApp.Bll.CodeInfo.Get<CODEINFO>(temp);
-            ddl_SecDir.DataSource = lst;
-            ddl_SecDir.DataTextField = "info";
-            ddl_SecDir.DataValueField = "CODE";
-            ddl_SecDir.DataBind();
+            using (ZZHMHN.IBase.I_Core.IScene sence = MyApp.Scene)
+            {
+                CODEINFO temp = new CODEINFO();
+                temp.STNDNAME = "ROADWAY.SECONDDIR";
+                sence.Context = new ZZHMHN.Web.Core.InvokeContext("", Road_ID);
+                List<CODEINFO> lst = sence.Bll.CodeInfo.Get<CODEINFO>(temp);
+                ddl_SecDir.DataSource = lst;
+                ddl_SecDir.DataTextField = "info";
+                ddl_SecDir.DataValueField = "CODE";
+                ddl_SecDir.DataBind();
+            }
         }
         protected void btn_OK_Click(object sender, EventArgs e)
         {

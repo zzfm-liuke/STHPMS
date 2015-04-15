@@ -44,5 +44,22 @@ namespace ZZHMHN.BLL.Core
         {
             return new InventoryBussiness();
         }
+
+        public IPmseltsBill GetPmseltsBill()
+        {
+            return new PmseltsBussiness();
+        }
+
+
+        public ISelectionBill GetSelectionBill()
+        {
+            return new SelectionBussiness();
+        }
+
+
+        public IRdLayBill GetRdLayBill()
+        {
+            return new RdLayBussiness();
+        }
     }
 }

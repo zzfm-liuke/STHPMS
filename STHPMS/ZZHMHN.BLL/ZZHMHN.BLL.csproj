@@ -74,9 +74,13 @@
   <ItemGroup>
     <Compile Include="Bussiness\CodeInfoBussiness.cs" />
     <Compile Include="Bussiness\DatabaseManagerBussiness.cs" />
+    <Compile Include="Bussiness\AnalysisCodeBussiness.cs" />
     <Compile Include="Bussiness\InventoryBussiness.cs" />
     <Compile Include="Bussiness\NavigationBussiness.cs" />
+    <Compile Include="Bussiness\PmseltsBussiness.cs" />
+    <Compile Include="Bussiness\RdLayBussiness.cs" />
     <Compile Include="Bussiness\RoadWayBussiness.cs" />
+    <Compile Include="Bussiness\SelectionBussiness.cs" />
     <Compile Include="Bussiness\TestBussiness.cs" />
     <Compile Include="Core\BllBase.cs" />
     <Compile Include="Core\BllFacade.cs" />

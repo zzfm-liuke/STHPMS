@@ -59,6 +59,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +69,8 @@
   <ItemGroup>
     <Compile Include="Common\Ext.cs" />
     <Compile Include="Definition\ConfigStrings.cs" />
+    <Compile Include="Definition\ConfigStringsFactory.cs" />
+    <Compile Include="Definition\GlobalDefinition.cs" />
     <Compile Include="Definition\TypeStringDefinition.cs" />
     <Compile Include="Common\DisposeObject.cs" />
     <Compile Include="I_BLL\IBll.cs" />
@@ -77,7 +80,10 @@
     <Compile Include="I_BLL\IDatabaseManagerBill.cs" />
     <Compile Include="I_BLL\IInventoryBill.cs" />
     <Compile Include="I_BLL\INavigationBill.cs" />
+    <Compile Include="I_BLL\IPmseltsBill.cs" />
+    <Compile Include="I_BLL\IRdLayBill.cs" />
     <Compile Include="I_BLL\IRoadWayBill.cs" />
+    <Compile Include="I_BLL\ISelectionBill.cs" />
     <Compile Include="I_BLL\ITestBll.cs" />
     <Compile Include="I_Core\IFacade.cs" />
     <Compile Include="I_Core\IModule.cs" />
@@ -94,9 +100,12 @@
     <Compile Include="I_DAL\IDatabaseManagerRepository.cs" />
     <Compile Include="I_DAL\IInventoryRepository.cs" />
     <Compile Include="I_DAL\INavigationDao.cs" />
+    <Compile Include="I_DAL\IPmseltsRepository.cs" />
+    <Compile Include="I_DAL\IRdLayRepository.cs" />
     <Compile Include="I_DAL\IRepository.cs" />
     <Compile Include="I_DAL\IRoadsDao.cs" />
     <Compile Include="I_DAL\IRoadWayRepository.cs" />
+    <Compile Include="I_DAL\ISelectionRepository.cs" />
     <Compile Include="I_DAL\ITestDal.cs" />
     <Compile Include="I_Entity\IAliasAttribute.cs" />
     <Compile Include="I_Entity\IArchive\IARCHNDX.cs" />
@@ -172,6 +181,9 @@
     <Folder Include="I_Serv\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Definition\ConfigStrings.America.cs">
+      <DependentUpon>ConfigStrings.cs</DependentUpon>
+    </Compile>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -20,5 +20,11 @@ namespace ZZHMHN.IBase.I_BLL
         IRoadWayBill RoadWay { get; }
 
         IInventoryBill Inventory { get; }
+
+        IPmseltsBill Pmselts { get; }
+
+        ISelectionBill Selection { get; }
+
+        IRdLayBill RdLayBill { get; }
     }
 }

@@ -10,17 +10,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 using ServiceStack.OrmLite;
 using ServiceStack.DataAnnotations;
 using ServiceStack.Model;
 
+
 namespace ZZHMHN.Web.Entity.Ihpms
 {
 	[Alias("PMSELTS")]
-    public partial class PMSELT :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IPMSELT
+    public partial class PMSELTS :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IPMSELT
     {
-		public PMSELT()
+        public PMSELTS()
 		{
 		}
 

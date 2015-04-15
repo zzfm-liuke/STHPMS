@@ -65,6 +65,10 @@ namespace ZZHMHN.BLL.Core
             get { return Ext.SetScence(Factory.GetInventoryBill(), this.Scene); }
         }
 
+        public IPmseltsBill Pmselts
+        {
+            get { return Ext.SetScence(Factory.GetPmseltsBill(), this.Scene); }
+        }
 
         protected override void OnDispose()
         {
@@ -72,5 +76,17 @@ namespace ZZHMHN.BLL.Core
             _factory=null;
         }
 
+
+
+        public ISelectionBill Selection
+        {
+            get { return Ext.SetScence(Factory.GetSelectionBill(),this.Scene); }
+        }
+
+
+        public IRdLayBill RdLayBill
+        {
+            get { return Ext.SetScence(Factory.GetRdLayBill(), this.Scene); }
+        }
     }
 }
