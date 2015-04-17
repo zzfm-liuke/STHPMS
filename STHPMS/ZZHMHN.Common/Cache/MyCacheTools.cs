@@ -43,6 +43,14 @@ namespace ZZHMHN.Common.Cache
         }
         #endregion
 
+        public static void ClearCache(string key)
+        {
+            if (IsCacheExist(key))
+            {
+                System.Web.HttpRuntime.Cache.Remove(key);
+            }
+        }
+
         #region 查询Cache是否存在
         /// <summary>
         /// 查询Cache是否存在

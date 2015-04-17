@@ -24,5 +24,17 @@ namespace ZZHMHN.BLL.Bussiness
         {
             return MyApp.Dal.InventoryRepository.GetEnd<T>(RoadNum, beginDrowDownList);
         }
+
+
+        public List<T> GetIInventoryView<T>(int k, int r) where T : class, IBase.I_Entity.IView.IINVNTORY_View
+        {
+            return MyApp.Dal.BasisDao.IHPMS.Select<T>(q => q.OrderBy(x => x.RDWAYID).Limit(skip: k, rows: r));
+        }
+
+
+        public long GetRecordCount()
+        {
+            return MyApp.Dal.BasisDao.IHPMS.Count<IBase.I_Entity.IView.IINVNTORY_View>();
+        }
     }
 }

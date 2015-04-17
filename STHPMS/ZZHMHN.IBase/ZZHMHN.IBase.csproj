@@ -39,23 +39,23 @@
   <ItemGroup>
     <Reference Include="ServiceStack.Common, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.OrmLite.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.SqlServer, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text, Version=4.5.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,10 +78,15 @@
     <Compile Include="I_BLL\IBllFactory.cs" />
     <Compile Include="I_BLL\ICodeInfoBll.cs" />
     <Compile Include="I_BLL\IDatabaseManagerBill.cs" />
+    <Compile Include="I_BLL\IDtparamBill.cs" />
+    <Compile Include="I_BLL\IFriction_Model_CoefficientsBill.cs" />
     <Compile Include="I_BLL\IInventoryBill.cs" />
+    <Compile Include="I_BLL\IMrpolicysetsBill.cs" />
     <Compile Include="I_BLL\INavigationBill.cs" />
+    <Compile Include="I_BLL\IPci_Model_CoefficientBill.cs" />
     <Compile Include="I_BLL\IPmseltsBill.cs" />
     <Compile Include="I_BLL\IRdLayBill.cs" />
+    <Compile Include="I_BLL\IRide_Model_CoefficientBill.cs" />
     <Compile Include="I_BLL\IRoadWayBill.cs" />
     <Compile Include="I_BLL\ISelectionBill.cs" />
     <Compile Include="I_BLL\ITestBll.cs" />
@@ -98,11 +103,16 @@
     <Compile Include="I_Core\IServiceLocator.cs" />
     <Compile Include="I_DAL\IDalFactory.cs" />
     <Compile Include="I_DAL\IDatabaseManagerRepository.cs" />
+    <Compile Include="I_DAL\IDtparamRepository.cs" />
+    <Compile Include="I_DAL\IFriction_Model_CoefficientsRepository.cs" />
     <Compile Include="I_DAL\IInventoryRepository.cs" />
+    <Compile Include="I_DAL\IMrpolicysetsRepository.cs" />
     <Compile Include="I_DAL\INavigationDao.cs" />
+    <Compile Include="I_DAL\IPci_Model_CoefficientRepository.cs" />
     <Compile Include="I_DAL\IPmseltsRepository.cs" />
     <Compile Include="I_DAL\IRdLayRepository.cs" />
     <Compile Include="I_DAL\IRepository.cs" />
+    <Compile Include="I_DAL\IRide_Model_CoefficientRepository.cs" />
     <Compile Include="I_DAL\IRoadsDao.cs" />
     <Compile Include="I_DAL\IRoadWayRepository.cs" />
     <Compile Include="I_DAL\ISelectionRepository.cs" />
@@ -168,6 +178,7 @@
     <Compile Include="I_Entity\ISelect\ISelection.cs" />
     <Compile Include="I_Entity\ISelect\ISelection2.cs" />
     <Compile Include="I_Entity\ITestEntity.cs" />
+    <Compile Include="I_Entity\IView\IINVNTORY_View.cs" />
     <Compile Include="I_Entity\IView\IROADWAY_VIEW.cs" />
     <Compile Include="I_UI\ITestUI.cs" />
     <Compile Include="I_UI\IUIFacade.cs" />

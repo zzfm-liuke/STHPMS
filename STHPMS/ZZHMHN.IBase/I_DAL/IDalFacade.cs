@@ -55,5 +55,15 @@ namespace ZZHMHN.IBase.I_DAL
         IPmseltsRepository PmseltsRepository { get; }
 
         IRdLayRepository RdLayRepository { get; }
+
+        IMrpolicysetsRepository MrpolicysetsRepository { get; }
+
+        IDtparamRepository DtparamRepository { get; }
+
+        IRide_Model_CoefficientRepository Ride_Model_CoefficientRepository { get; }
+
+        IPci_Model_CoefficientRepository Pci_Model_CoefficientRepository { get; }
+
+        IFriction_Model_CoefficientsRepository Friction_Model_CoefficientsRepository { get; }
     }
 }

@@ -18,9 +18,9 @@ using ServiceStack.Model;
 namespace ZZHMHN.Web.Entity.Ihpms
 {
 	[Alias("PMSFILES")]
-    public partial class PMSFILE :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IPMSFILE
+    public partial class PMSFILES :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IPMSFILE
     {
-		public PMSFILE()
+		public PMSFILES()
 		{
 		}
 

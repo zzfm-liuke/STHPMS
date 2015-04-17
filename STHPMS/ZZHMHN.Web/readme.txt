@@ -3,3 +3,6 @@
 2.翻译Analysis.bas的功能，对应的类AnalysisCodeBussiness，完成20%
 3.实现自由切换数据库连接字符串的功能：
   在web.config 中有配置项configStringsEnum,其值 develop:开发环境的连接字符串，america：美国环境的连接字符串
+  ======================2015.4.17====================================
+ 1.AnalysisCodeBussiness，完成70% 因编译不通过暂时不提交
+ 2.库存数据显示,相关的接口和类，枚举

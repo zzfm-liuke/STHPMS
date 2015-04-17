@@ -61,5 +61,34 @@ namespace ZZHMHN.BLL.Core
         {
             return new RdLayBussiness();
         }
+
+
+        public IMrpolicysetsBill GetMrpolicysetsBill()
+        {
+            return new MrpolicysetsBussiness();
+        }
+
+
+        public IDtparamBill GetDtparamBill()
+        {
+            return new DtparamBussiness();
+        }
+
+
+        public IRide_Model_CoefficientBill GetRide_Model_CoefficientBill()
+        {
+            return new Ride_Model_CoefficientBussiness();
+        }
+
+        public IPci_Model_CoefficientBill GetPci_Model_CoefficientBill()
+        {
+            return new Pci_Model_CoefficientBussiness();
+        }
+
+
+        public IFriction_Model_CoefficientsBill GetFriction_Model_CoefficientsBill()
+        {
+            return new Friction_Model_CoefficientsBussiness();
+        }
     }
 }

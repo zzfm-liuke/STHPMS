@@ -6,7 +6,7 @@
     <site url="View/RoadManager/FrmMutipleParameterManager.aspx" title="添加指标"/>
   </site>
   <site url="#" title="性能指标">
-    <site url="#" title="库存数据"/>
+    <site url="View/Performance/FrmInventoryData.aspx" title="库存数据"/>
     <site url="#" title="结构与层间特性"/>
     <site url="#" title="平整度"/>
     <site url="#" title="路面状态"/>

@@ -15,7 +15,7 @@ using ZZHMHN.IBase.I_Entity;
 namespace ZZHMHN.IBase.I_Entity.Ihpms
 {
 	[IAlias("MRPOLICYSETS")]
-    public partial interface IMRPOLICYSET :ZZHMHN.IBase.I_Entity.IEntity
+    public partial interface IMRPOLICYSETS :ZZHMHN.IBase.I_Entity.IEntity
     {
         [Required]
 		[PrimaryKey]

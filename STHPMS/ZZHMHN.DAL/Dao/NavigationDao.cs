@@ -20,6 +20,7 @@ namespace ZZHMHN.DAL.Dao
     {
         public List<object> GetData()
         {
+            Common.Cache.MyCacheTools.ClearCache("Navigation");
             if(!Common.Cache.MyCacheTools.IsCacheExist("Navigation"))
             {
 

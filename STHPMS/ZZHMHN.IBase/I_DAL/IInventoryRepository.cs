@@ -26,5 +26,6 @@ namespace ZZHMHN.IBase.I_DAL
         /// <param name="beginDrowDownList">FrmMutipleParameterManager页面开始选项值</param>
         /// <returns></returns>
         List<T> GetEnd<T>(int RoadNum,string beginDrowDownList) where T : class ,IINVNTORY;
+
     }
 }

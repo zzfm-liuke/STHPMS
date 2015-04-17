@@ -27,5 +27,15 @@ namespace ZZHMHN.IBase.I_BLL
         ISelectionBill GetSelectionBill();
 
         IRdLayBill GetRdLayBill();
+
+        IMrpolicysetsBill GetMrpolicysetsBill();
+
+        IDtparamBill GetDtparamBill();
+
+        IRide_Model_CoefficientBill GetRide_Model_CoefficientBill();
+
+        IPci_Model_CoefficientBill GetPci_Model_CoefficientBill();
+
+        IFriction_Model_CoefficientsBill GetFriction_Model_CoefficientsBill();
     }
 }

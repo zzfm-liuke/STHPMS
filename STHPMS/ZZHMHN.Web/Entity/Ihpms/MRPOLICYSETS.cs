@@ -18,9 +18,9 @@ using ServiceStack.Model;
 namespace ZZHMHN.Web.Entity.Ihpms
 {
 	[Alias("MRPOLICYSETS")]
-    public partial class MRPOLICYSET :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IMRPOLICYSET
+    public partial class MRPOLICYSETS :ZZHMHN.Web.Core.EntityBase, ZZHMHN.IBase.I_Entity.Ihpms.IMRPOLICYSETS
     {
-		public MRPOLICYSET()
+		public MRPOLICYSETS()
 		{
 		}
 

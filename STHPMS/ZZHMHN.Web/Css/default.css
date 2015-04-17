@@ -119,6 +119,20 @@ table td{
 
 }
 
+.List{
+
+   border: 1px solid #B7B7B7;
+
+    FONT-SIZE: 14px;
+
+    COLOR:#003366;
+
+    BACKGROUND-COLOR: #f4f4f4;
+
+    Width:200px;
+    height:100px;
+}
+
 /**//*****************************************************
 
 超级链接显示风格

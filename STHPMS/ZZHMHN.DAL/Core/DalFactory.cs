@@ -60,7 +60,11 @@ namespace ZZHMHN.DAL.Core
         {
             return Get<RdLayRepository>();
         }
-
+ 
+        public IMrpolicysetsRepository GetMrpolicysetsRepository()
+        {
+            return Get<MrpolicysetsRepository>();
+        }
 
         #endregion
 
@@ -82,11 +86,27 @@ namespace ZZHMHN.DAL.Core
 
         #endregion
 
+        public IDtparamRepository GetDtparamRepository()
+        {
+            return Get<DtparamRepository>();
+        }
 
 
+        public IRide_Model_CoefficientRepository GetRide_Model_CoefficientRepository()
+        {
+            return Get<Ride_Model_CoefficientRepository>();
+        }
 
 
+        public IPci_Model_CoefficientRepository GetPci_Model_CoefficientRepository()
+        {
+            return Get<Pci_Model_CoefficientRepository>();
+        }
 
-       
+
+        public IFriction_Model_CoefficientsRepository GetFriction_Model_CoefficientsRepository()
+        {
+            return Get<Friction_Model_CoefficientsRepository>();
+        }
     }
 }

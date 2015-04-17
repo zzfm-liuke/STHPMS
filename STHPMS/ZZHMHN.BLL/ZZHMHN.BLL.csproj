@@ -45,23 +45,23 @@
     </Reference>
     <Reference Include="ServiceStack.Common, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.OrmLite.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.SqlServer, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.OrmLite.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text, Version=4.5.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\net451\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.1.2\lib\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -75,10 +75,15 @@
     <Compile Include="Bussiness\CodeInfoBussiness.cs" />
     <Compile Include="Bussiness\DatabaseManagerBussiness.cs" />
     <Compile Include="Bussiness\AnalysisCodeBussiness.cs" />
+    <Compile Include="Bussiness\DtparamBussiness.cs" />
+    <Compile Include="Bussiness\Friction_Model_CoefficientsBussiness.cs" />
     <Compile Include="Bussiness\InventoryBussiness.cs" />
+    <Compile Include="Bussiness\MrpolicysetsBussiness.cs" />
     <Compile Include="Bussiness\NavigationBussiness.cs" />
+    <Compile Include="Bussiness\Pci_Model_CoefficientBussiness.cs" />
     <Compile Include="Bussiness\PmseltsBussiness.cs" />
     <Compile Include="Bussiness\RdLayBussiness.cs" />
+    <Compile Include="Bussiness\Ride_Model_CoefficientBussiness.cs" />
     <Compile Include="Bussiness\RoadWayBussiness.cs" />
     <Compile Include="Bussiness\SelectionBussiness.cs" />
     <Compile Include="Bussiness\TestBussiness.cs" />

@@ -109,6 +109,36 @@ namespace ZZHMHN.DAL.Core
 
 
 
-      
+
+
+
+        public IMrpolicysetsRepository MrpolicysetsRepository
+        {
+            get { return Ext.SetScence(Factory.GetMrpolicysetsRepository(), this.Scene); }
+        }
+
+
+        public IDtparamRepository DtparamRepository
+        {
+            get { return Ext.SetScence(Factory.GetDtparamRepository(), this.Scene); }
+        }
+
+
+        public IRide_Model_CoefficientRepository Ride_Model_CoefficientRepository
+        {
+            get { return Ext.SetScence(Factory.GetRide_Model_CoefficientRepository(), this.Scene); }
+        }
+
+
+        public IPci_Model_CoefficientRepository Pci_Model_CoefficientRepository
+        {
+            get { return Ext.SetScence(Factory.GetPci_Model_CoefficientRepository(), this.Scene); }
+        }
+
+
+        public IFriction_Model_CoefficientsRepository Friction_Model_CoefficientsRepository
+        {
+            get { return Ext.SetScence(Factory.GetFriction_Model_CoefficientsRepository(), this.Scene); }
+        }
     }
 }

@@ -30,5 +30,15 @@ namespace ZZHMHN.IBase.I_DAL
         IPmseltsRepository GetPmseltsRepository();
 
         IRdLayRepository GetRdLayRepository();
+
+        IMrpolicysetsRepository GetMrpolicysetsRepository();
+
+        IDtparamRepository GetDtparamRepository();
+
+        IRide_Model_CoefficientRepository GetRide_Model_CoefficientRepository();
+
+        IPci_Model_CoefficientRepository GetPci_Model_CoefficientRepository();
+
+        IFriction_Model_CoefficientsRepository GetFriction_Model_CoefficientsRepository();
     }
 }

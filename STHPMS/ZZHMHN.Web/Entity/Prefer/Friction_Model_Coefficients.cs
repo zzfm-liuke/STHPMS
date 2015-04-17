@@ -26,7 +26,9 @@ namespace ZZHMHN.Web.Entity.Prefer
 
         [Required]
 		[PrimaryKey]
-        public short CODE { get; set;}		
+        public short CODE { get; set;}
+        [Required]
+        [PrimaryKey]
         public int? Method { get; set;}
         public bool? SelectedOption { get; set;}
         public double? Fri_Coefficient_a0 { get; set;}

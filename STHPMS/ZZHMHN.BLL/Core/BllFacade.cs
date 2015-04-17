@@ -88,5 +88,34 @@ namespace ZZHMHN.BLL.Core
         {
             get { return Ext.SetScence(Factory.GetRdLayBill(), this.Scene); }
         }
+
+
+        public IMrpolicysetsBill MrpolicysetsBill
+        {
+            get { return Ext.SetScence(Factory.GetMrpolicysetsBill(),this.Scene); }
+        }
+
+
+        public IDtparamBill DtparamBill
+        {
+            get { return Ext.SetScence(Factory.GetDtparamBill(),this.Scene); }
+        }
+
+
+        public IRide_Model_CoefficientBill Ride_Model_CoefficientBill
+        {
+            get { return Ext.SetScence(Factory.GetRide_Model_CoefficientBill(), this.Scene); }
+        }
+
+        public IPci_Model_CoefficientBill Pci_Model_CoefficientBill
+        {
+            get { return Ext.SetScence(Factory.GetPci_Model_CoefficientBill(), this.Scene); }
+        }
+
+
+        public IFriction_Model_CoefficientsBill Friction_Model_CoefficientsBill
+        {
+            get { return Ext.SetScence(Factory.GetFriction_Model_CoefficientsBill(), this.Scene); }
+        }
     }
 }
